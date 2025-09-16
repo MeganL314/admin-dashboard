@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
   </head>
 <body>
 
@@ -13,49 +16,61 @@
 
       <div class="header">
         <div class="header-top">
-          <div>*search bar .. etc</div>
+          <form class="search-form">
+            <span class="mdi mdi-magnify"></span>
+            <input type="text" class="search-input">
+          </form>
+          <span class="mdi mdi-bell-ring-outline"></span>
+          <span class="mdi mdi-dog-side"></span>
+          <div> Morgan Oakley</div>
         </div>
-        <div class="logo">Hi there, Morgan Oakley
-          (@morgan)
-        </div>
-        <div class="header-menu">
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>  
+        <div class="header-bottom">
+          <div class="greeting">
+            <span class="mdi mdi-dog-side"></span>
+            <div>
+              <p>Hi there, </p>
+              <p>Morgan Oakley (@morgan) </p>
+            </div>
+          </div>
+          <div class="header-menu">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>  
+          </div>
         </div>
       </div>
 
       <div class="sidebar">
         <div class="dashboard">
-          <div><p>placeholder</p>Dashboard</div>   
+          <div><span class="mdi mdi-view-dashboard"></span>Dashboard</div>   
         </div>
         <div class="sidebar-middle">
-          <div class="side-content">Home
+          <div class="side-content"><span class="mdi mdi-home-city-outline"></span>Home
           </div>
-          <div class="side-content">Profile
+          <div class="side-content"><span class="mdi mdi-face-woman-profile"></span>Profile
           </div>
-          <div class="side-content">Messages
+          <div class="side-content"><span class="mdi mdi-message-alert"></span>Messages
           </div>
-          <div class="side-content">History
+          <div class="side-content"><span class="mdi mdi-history"></span>History
           </div>
-          <div class="side-content">Tasks
+          <div class="side-content"><span class="mdi mdi-check-underline-circle-outline"></span>Tasks
           </div>
-          <div class="side-content">Community
+          <div class="side-content"><span class="mdi mdi-account-group"></span>Communities
           </div>
         </div>
         <div class="sidebar-lower">
-          <div class="side-content">Settings
+          <div class="side-content"><span class="mdi mdi-cogs"></span>Settings
           </div>
-          <div class="side-content">Support
+          <div class="side-content"><span class="mdi mdi-lifebuoy"></span>Support
           </div>
-          <div class="side-content">Privacy
+          <div class="side-content"><span class="mdi mdi-shield-check-outline"></span>Privacy
           </div>
         </div>
       </div>
 
       <div class="main">
         <div class="article">
-          <div class="header">Your Projects </div>
+          <div class="main-title"> Your Projects </div>
           <div class="card-container">
             <div class="card">
               <p class="title">Super Cool Project</p>
@@ -85,7 +100,7 @@
         </div>
         
         <div class="announcements">
-          <div class="header">Announcements</div>
+          <div class="main-title">Announcements</div>
           <div class="announce-container">
             <div class="right-side">
               <p class="title">Site Maintenance</p>
@@ -104,27 +119,35 @@
 
 
         <div class="trending">
-          <div class="header">Trending</div>
+          <div class="main-title">Trending</div>
           <div class="trending-container">
             <div class="bottom-right">
-              <img src="" alt="">
-              <p class="title">@tegan</p>
-              <p>World Peace Builder</p>
+              <span class="mdi mdi-dog"></span>
+              <div>
+                <p class="title">@tegan</p>
+                <p>World Peace Builder</p>
+              </div>
             </div>
             <div class="bottom-right">
-              <img src="" alt="">
-              <p class="title">@morgan</p>
-              <p>Super Cool Project</p>
+              <span class="mdi mdi-dna"></span>
+              <div>
+                <p class="title">@kendall</p>
+                <p>Super Cool Project</p>
+              </div>
             </div>
             <div class="bottom-right">
-              <img src="" alt="">
-              <p class="title">@kendall</p>
-              <p>Life Changing App</p>
+              <span class="mdi mdi-dog-side"></span>
+              <div>
+                <p class="title">@morgan</p>
+                <p>Life Changing App</p>
+              </div>
             </div>
             <div class="bottom-right">
-              <img src="" alt="">
-              <p class="title">@alex</p>
-              <p>No Traffic Maker</p>
+              <span class="mdi mdi-dumbbell"></span>
+              <div>
+                <p class="title">@alex</p>
+                <p>No Traffic Maker</p>
+              </div>
             </div>
 
           </div>

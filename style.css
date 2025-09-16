@@ -7,7 +7,6 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 4px;
 }
 
 .card .title {
@@ -18,7 +17,7 @@
 .right-side .title {
   font-size: 14px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 .main {
@@ -28,16 +27,56 @@
     grid-template-rows: 1fr 1fr;
     gap: 4px;
     grid-column: 2 / 3;
-    background-color: lightgrey;
+    background-color: rgb(187, 201, 208);
     padding: 15px;
+    grid-row: 2;
 }
 
 .header {
-    grid-column: 1 / 3;
+    grid-row: 1;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
+
+.header-top, .header-bottom, .greeting{
+  display: flex;
+}
+
+.header-top {
+  align-items: center;
+}
+
+.search-form .search-input{
+  width: 250px;
+
+}
+
+
 
 .sidebar {
     grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / 3;
+    background-color: rgb(66, 142, 199);
+    color: white;
+
+}
+
+.sidebar > div {
+  padding-bottom: 25px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.sidebar .dashboard {
+  font-size: 22px;
+}
+
+.sidebar > div > div{
+  padding: 10px;
 }
 
 .main .article .card-container{
@@ -50,6 +89,7 @@
 .main .article {
     grid-column: 1 /2;
     grid-row: 1/3;
+    border: 10px solid rgb(187, 201, 208);
 }
 
 .main .announcements {
@@ -58,23 +98,103 @@
     color: black;
     text-align: left;
     font-size: 12px;
+    border: 10px solid rgb(187, 201, 208);
 }
 
 .main .announcements .announce-container {
     background-color: white;
     padding: 15px;
+    border-radius: 10px;
 }
 
+.main .announcements .announce-container .right-side{
+  padding: 10px;
+  border-bottom: lightgrey solid 1px;
+  text-align: left;
+}
 
 .main .trending {
     grid-column: 2 /3;
     grid-row: 2/3;
     color: black;
-    background-color: white;
+    border: 10px solid rgb(187, 201, 208);
+}
+
+.main .trending .trending-container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.bottom-right {
+  display: flex;
+}
+
+.bottom-right > div {
+  padding: 10px;
 }
 
 .article .card {
   background-color: white;
   color: black;
   padding: 15px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  border-left: rgb(255, 200, 0) solid 5px;
 }
+
+.main-title {
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  background-color: rgb(187, 201, 208);
+  border-bottom: 5px solid rgb(187, 201, 208);
+}
+
+.trending .mdi, .header-top .mdi-dog-side{
+  display: inline-flex;          /* makes span act like a flexbox */
+  justify-content: center;       /* center horizontally */
+  align-items: center;           /* center vertically */
+
+  font-size: 30px; /* make it big */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+
+
+.mdi.mdi-dog{
+  color: rgba(227, 97, 136, 0.848);    /* make it visible */
+  background-color: rgb(194, 188, 216);
+
+}
+
+.mdi.mdi-dog-side{
+  color: rgba(163, 74, 163, 0.921);    /* make it visible */
+  background-color: rgb(236, 191, 221);
+}
+
+.mdi.mdi-dna{
+  color: rgba(226, 207, 63, 0.921);    /* make it visible */
+  background-color: rgba(189, 234, 189, 0.501);
+}
+
+.mdi.mdi-dumbbell{
+  color: rgba(75, 105, 226, 0.921);    /* make it visible */
+  background-color: rgba(180, 236, 243, 0.918);
+}
+
+
+.sidebar .mdi{
+  border-right: 15px solid rgb(66, 142, 199);
+  border-left: 10px solid rgb(66, 142, 199);
+}
+
+.mdi.mdi-view-dashboard {
+  font-size: 35px;
+}
+
